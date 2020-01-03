@@ -1,5 +1,3 @@
-# cubrid-exporter
-A Prometheus interface for CUBRID Monitoring
 # CUBRID_exporter - An interface providing CUBRID db metric to the prometheus
 Overview
 ========
