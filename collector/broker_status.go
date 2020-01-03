@@ -35,7 +35,7 @@ var (
 	BrokersInfo = prometheus.NewDesc(
 		prometheus.BuildFQName(namespace, "broker_status", "info"),
 		"Information about CUBRID Broker Status",
-		[]string{"broker_name", "num_as", "pid", "port", "qsize", "num_select", "num_insert", "num_update", "num_delete", "num_trans", "num_conns", "tps", "qps"}, nil,
+		[]string{"broker_name", "num_as", "pid", "port", "qsize", "num_select", "num_insert", "num_update", "num_delete", "num_trans", "num_conns"}, nil,
 	)
 
 	BrokerInfo = prometheus.NewDesc(
