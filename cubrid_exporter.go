@@ -25,7 +25,7 @@ import (
 	"github.com/prometheus/common/version"
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/prometheus/mysqld_exporter/collector"
+	"github.com/cubrid/cubrid-exporter/collector"
 )
 
 var (

@@ -29,7 +29,7 @@ type Scraper interface {
 	// Example: "Collect from SHOW ENGINE INNODB STATUS"
 	Help() string
 
-	// Version of MySQL from which scraper is available.
+	// Version of CUBRID from which scraper is available.
 	Version() float64
 
 	// Scrape collects data from database connection and sends it over channel as prometheus metric.
