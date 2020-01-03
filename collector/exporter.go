@@ -143,13 +143,6 @@ func (e *Exporter) scrape(ctx context.Context, ch chan<- prometheus.Metric) {
 	// Set max lifetime for a connection.
 	db.SetConnMaxLifetime(1 * time.Minute)
 
-	// if err := db.PingContext(ctx); err != nil {
-	// 	log.Errorln("Error pinging mysqld:", err)
-	// 	e.metrics.MySQLUp.Set(0)
-	// 	e.metrics.Error.Set(1)
-	// 	return
-	// }
-
 	e.metrics.CubridUp.Set(1)
 	e.metrics.Error.Set(0)
 
