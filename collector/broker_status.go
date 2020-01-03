@@ -96,8 +96,6 @@ func (ScrapeBrokerStatus) Scrape(ctx context.Context, db *sql.DB, ch chan<- prom
 			return err
 		}
 
-		// ch <- prometheus.MustNewConstMetric(BrokersInfo, prometheus.GaugeValue, 1, broker_name, num_as, pid, port, qsize, num_select, num_insert, num_update, num_delete, num_trans, num_conns)
-
 		count, _ := strconv.ParseFloat(num_as, 64)
 		ch <- prometheus.MustNewConstMetric(BrokerInfo, prometheus.GaugeValue, count, broker_name, "num_as")
 

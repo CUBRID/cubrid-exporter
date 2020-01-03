@@ -26,7 +26,7 @@ type Scraper interface {
 	Name() string
 
 	// Help describes the role of the Scraper.
-	// Example: "Collect from SHOW ENGINE INNODB STATUS"
+	// Example: "SHOW Brokers"
 	Help() string
 
 	// Version of CUBRID from which scraper is available.
