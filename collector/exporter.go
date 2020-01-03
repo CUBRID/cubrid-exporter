@@ -136,7 +136,7 @@ func (e *Exporter) scrape(ctx context.Context, ch chan<- prometheus.Metric) {
 	}
 }
 
-// get DBMS version (추후 사용)
+// get DBMS version
 func getCubridVersion(db *sql.DB) float64 {
 	var versionStr string
 	var versionNum float64
