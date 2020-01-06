@@ -1,4 +1,5 @@
-# CUBRID_exporter - An interface providing CUBRID db metric to the prometheus
+# CUBRID_exporter:
+## _An interface providing CUBRID db metric to the prometheus_
 Overview
 ========
 
