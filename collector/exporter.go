@@ -16,7 +16,6 @@ package collector
 import (
 	"context"
 	"database/sql"
-	"fmt"
 	"regexp"
 	"strconv"
 	"sync"
@@ -26,7 +25,6 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/log"
-	"gopkg.in/alecthomas/kingpin.v2"
 )
 
 // Metric name parts.
