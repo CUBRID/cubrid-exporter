@@ -119,10 +119,10 @@ func newHandler(metrics collector.Metrics, scrapers []collector.Scraper) http.Ha
 
 func createDSN() {
 	// code
-	ip := ""
-	port := ""
-	databaseName := ""
-	username := ""
+	ip := "192.168.1.8"
+	port := "45105"
+	databaseName := "demodb"
+	username := "dba"
 	password := ""
 
 	dsn = "cci:cubrid:" + ip + ":" + port + ":" + databaseName + ":" + username + ":" + password + ":"
